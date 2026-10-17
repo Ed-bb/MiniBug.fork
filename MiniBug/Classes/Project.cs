@@ -158,7 +158,7 @@ namespace MiniBug
             {
                 using (var writer = new StreamWriter(fileName, false, System.Text.Encoding.UTF8))
                 {
-                    using (var csv = new CsvWriter(writer))
+                    using (var csv = new CsvWriter(writer, System.Globalization.CultureInfo.InvariantCulture))
                     {
                         csv.WriteRecords(Issues.Values);
                     }
@@ -196,7 +196,7 @@ namespace MiniBug
             {
                 using (var writer = new StreamWriter(fileName, false, System.Text.Encoding.UTF8))
                 {
-                    using (var csv = new CsvWriter(writer))
+                    using (var csv = new CsvWriter(writer, System.Globalization.CultureInfo.InvariantCulture))
                     {
                         csv.WriteRecords(Tasks.Values);
                     }
