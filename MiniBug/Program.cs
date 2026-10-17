@@ -22,6 +22,7 @@ namespace MiniBug
         [STAThread]
         static void Main()
         {
+            Application.SetDefaultVisualStylesMode(VisualStylesMode.Latest);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
