@@ -18,21 +18,25 @@ namespace MiniBug
         /// <summary>
         /// Gets or sets the caption of the form.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string FormCaption { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the feedback message title.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string MessageTitle { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the feedback message.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string Message { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the image displayed in the form.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Image FormImage { get; set; } = null;
 
         public FeedbackForm()
